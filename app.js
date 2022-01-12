@@ -60,7 +60,7 @@ d3.csv("/Multiples.csv").then(function(data) {
         .attr('y', (data) => y(parseInt(data[sales].slice(1))))
         .on("click", function(a, d) {
             var salesIndx = this_year_sales.indexOf((d))
-            document.getElementById("Kilograms").innerHTML = this_year_sales[salesIndx]
+            document.getElementById("sales").innerHTML = this_year_sales[salesIndx]
         });
 
     chart
